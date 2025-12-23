@@ -56,11 +56,10 @@ conda activate RPG
 cd /workspace/RPG-DiffusionMaster
 pip install -r requirements.txt
 
-5. huggingface login
+## huggingface login
 
 from huggingface_hub import login
 import os
-
 login(token="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")
 
 

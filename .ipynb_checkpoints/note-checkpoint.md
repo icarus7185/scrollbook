@@ -43,6 +43,8 @@ llama model download --source meta --model-id Llama3.3-70B
 
 
 ## git
+apt update
+apt install gh
 echo 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 | gh auth login --with-token
 git clone https://github.com/YangLing0818/RPG-DiffusionMaster
 
@@ -54,11 +56,10 @@ conda activate RPG
 cd /workspace/RPG-DiffusionMaster
 pip install -r requirements.txt
 
-5. huggingface login
+## huggingface login
 
 from huggingface_hub import login
 import os
-
 login(token="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")
 
 
