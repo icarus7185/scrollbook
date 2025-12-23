@@ -96,6 +96,6 @@ python /workspace/transformers/src/transformers/models/llama/convert_llama_weigh
 --------------
 ## Ollama
 curl -fsSL https://ollama.com/install.sh | sh
-ollama serve
 ollama pull llama3.2:1b
 ollama pull mxbai-embed-large
+ollama serve
