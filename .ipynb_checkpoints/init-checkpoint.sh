@@ -1,7 +1,7 @@
 # login github
 apt update
 apt install gh
-echo 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 | gh auth login --with-token
+echo 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 | gh auth login --with-token
 gh auth setup-git
 
 # active conda
