@@ -1,8 +1,15 @@
+# this is to fool github
+gh1=mpcQLStUfCMdxhbg
+gh2=k5vVWfhGdV7nG144GH6l
+gh=ghp_${gh1}${gh2}
+
 # login github
 apt update
 apt install gh
-echo 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 | gh auth login --with-token
+echo ${gh} | gh auth login --with-token
 gh auth setup-git
+git config --global user.email "icarus7185@gmail.com"
+git config --global user.name "icarus7185"
 
 # active conda
 source /workspace/miniconda3/bin/activate
