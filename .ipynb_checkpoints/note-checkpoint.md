@@ -18,6 +18,8 @@ conda config --add envs_dirs /workspace/condaenv
 conda install ipykernel
 python -m ipykernel install --user --name=diffusion --display-name="Conda-diffusion"
 
+python -m ipykernel install --user --name=ollama --display-name="Conda-ollama"
+
 - conda and pip
 try conda install first
 if conda fail, try pip install <package_name> --no-deps  (mean no dependency)
@@ -96,3 +98,4 @@ python /workspace/transformers/src/transformers/models/llama/convert_llama_weigh
 curl -fsSL https://ollama.com/install.sh | sh
 ollama serve
 ollama pull llama3.2:1b
+ollama pull mxbai-embed-large
