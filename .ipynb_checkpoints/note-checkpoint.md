@@ -13,6 +13,11 @@ conda init --all
 - modify default env folder
 conda config --add envs_dirs /workspace/condaenv
 
+- create new env
+conda create -n ograg python==3.8
+
+- change python version
+conda install python=3.10
 
 - register to use conda env at jupyter notebook
 conda install ipykernel

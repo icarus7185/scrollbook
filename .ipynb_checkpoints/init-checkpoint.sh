@@ -15,3 +15,5 @@ git config --global user.name "icarus7185"
 source /workspace/miniconda3/bin/activate
 conda init bash
 
+# add variable
+echo 'export OLLAMA_MODELS="/workspace/models/ollama"' | tee -a ~/.bashrc > /dev/null
