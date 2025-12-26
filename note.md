@@ -25,10 +25,14 @@ python -m ipykernel install --user --name=diffusion --display-name="Conda-diffus
 
 python -m ipykernel install --user --name=ollama --display-name="Conda-ollama"
 python -m ipykernel install --user --name=ograg --display-name="Conda-ograg"
+python -m ipykernel install --user --name=rag --display-name="Conda-rag"
 
 - conda and pip
 try conda install first
 if conda fail, try pip install <package_name> --no-deps  (mean no dependency)
+
+conda list
+conda remove <name>
 
 
 # Linux bash
@@ -53,9 +57,9 @@ llama model download --source meta --model-id Llama3.3-70B
 ## git
 apt update
 apt install gh
-echo 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 | gh auth login --with-token
+echo <key> | gh auth login --with-token
 git clone https://github.com/YangLing0818/RPG-DiffusionMaster
-
+git reset HEAD^     # caution !!
 
 5. requirements
 - create and active conda environment
