@@ -34,6 +34,8 @@ if conda fail, try pip install <package_name> --no-deps  (mean no dependency)
 conda list
 conda remove <name>
 
+conda env export > conda-environment-rag.yml
+pip install -r requirements.txt
 
 # Linux bash
 - copy folder
@@ -106,6 +108,6 @@ python /workspace/transformers/src/transformers/models/llama/convert_llama_weigh
 --------------
 ## Ollama
 curl -fsSL https://ollama.com/install.sh | sh
-ollama pull llama3.2:1b
+ollama pull llama3.2:3b
 ollama pull mxbai-embed-large
 ollama serve
