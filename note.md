@@ -1,3 +1,22 @@
+# GitHub
+- chạy lệnh cài tool liên quan github
+apt update && apt install gh -y
+gh auth setup-git
+
+- tạo key ssh hoặc copy key cũ vào thư mục
+bash github.sh 
+
+- hoặc copy file ssh có sẵn
+cp /workspace/scrollbook/id_ed25519 ~/.ssh/
+cp /workspace/scrollbook/id_ed25519.pub ~/.ssh/
+
+- Nếu tạo key mới thì copy public key vào tài khoản github
+
+- Khai báo email và name (không rõ tại sao lại cần bước này trong khi key đã match)
+git config --global user.email "icarus7185@gmail.com"
+git config --global user.name "icarus7185"
+
+
 # Conda
 - download conda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -12,6 +31,9 @@ conda init --all
 
 - modify default env folder
 conda config --add envs_dirs /workspace/condaenv
+
+- list conda env
+conda env list
 
 - create new env
 conda create -n ograg python==3.8
@@ -57,9 +79,6 @@ llama model download --source meta --model-id Llama3.3-70B
 
 
 ## git
-apt update
-apt install gh
-echo <key> | gh auth login --with-token
 git clone https://github.com/YangLing0818/RPG-DiffusionMaster
 git reset HEAD^     # caution !!
 
